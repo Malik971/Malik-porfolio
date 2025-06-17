@@ -8,11 +8,11 @@ import App from "../App";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />, // layout global
+    element: <App />,
     children: [
       {
         path: "private",
-        element: <PrivateLayout />, // layout avec Nav
+        element: <PrivateLayout />,
         children: [
           {
             path: "home",
