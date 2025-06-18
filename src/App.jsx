@@ -1,12 +1,13 @@
-import { Outlet } from "react-router"
+import { Outlet } from "react-router";
 
 function App() {
-
   return (
-    <main className="bg-gray-200 min-h-screen">
-      <Outlet />
+    <main className="bg-black min-h-screen text-white font-sans">
+      <div>
+        <Outlet />
+      </div>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
