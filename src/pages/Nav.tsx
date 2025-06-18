@@ -1,8 +1,8 @@
 import { Link } from "react-router";
 import { useNavigate } from "react-router-dom";
 import { NAV_LINKS } from "../utils/Nav_Link";
-import { Header } from "./header";
 import { motion } from "framer-motion";
+import { Header } from "./Header";
 
 function Nav() {
   const navigate = useNavigate();
