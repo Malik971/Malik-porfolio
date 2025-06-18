@@ -1,6 +1,6 @@
 // src/router.tsx
 
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter, Navigate } from "react-router";
 import PrivateLayout from "../layout/PrivateLayout";
 import Home from "../pages/Home";
 import App from "../App";
@@ -21,6 +21,10 @@ const router = createBrowserRouter([
         path: "private",
         element: <PrivateLayout />,
         children: [
+          {
+            index: true,
+            element: <Navigate to="/private/About" replace />,
+          },
           {
             path: "home",
             element: <Home />,
