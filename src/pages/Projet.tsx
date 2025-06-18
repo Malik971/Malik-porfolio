@@ -4,8 +4,32 @@ import IMG3 from "../assets/calculator.png";
 import IMG4 from "../assets/jeuchess.png";
 import IMG5 from "../assets/image_t-shirt_3D.jpg";
 import IMG6 from "../assets/burger-baner.png";
+import IMG7 from "../assets/memeChat.png";
+import IMG8 from "../assets/gestion-naissances.png";
+import IMG9 from "../assets/DocuFlow.png";
 
 const data = [
+  {
+    id: 9,
+    image: IMG9,
+    title: "Java | JavaScript | FreeMarker | Dockerfile",
+    github: "https://github.com/Malik971/DocuflowPDF",
+    demo: "https://documentpdf.netlify.app/",
+  },
+  {
+    id: 8,
+    image: IMG8,
+    title: "TypeScript | JavaScript",
+    github: "https://github.com/Malik971/gestion-naissances",
+    demo: "https://carnaval-montpellier.netlify.app/",
+  },
+  {
+    id: 7,
+    image: IMG7,
+    title: "TypeScript | JavaScript | HTML | CSS",
+    github: "https://github.com/Malik971/chat-random",
+    demo: "https://carnaval-montpellier.netlify.app/",
+  },
   {
     id: 1,
     image: IMG1,

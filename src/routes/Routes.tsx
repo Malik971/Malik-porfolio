@@ -9,6 +9,7 @@ import About from "../components/About";
 import Projet from "../pages/Projet";
 import Experience from "../pages/Experiences";
 import Logbook from "../pages/Logbook";
+import Contact from "../layout/Contacte";
 
 const router = createBrowserRouter([
   {
@@ -34,12 +35,16 @@ const router = createBrowserRouter([
           },
           {
             path: "Experience",
-            element: <Experience />
+            element: <Experience />,
           },
           {
             path: "Carnet",
-            element: <Logbook />
-          }
+            element: <Logbook />,
+          },
+          {
+            path: "Contact",
+            element: <Contact />,
+          },
         ],
       },
       {

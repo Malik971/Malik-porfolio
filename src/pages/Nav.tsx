@@ -1,9 +1,11 @@
 import { Link } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { NAV_LINKS } from "../utils/Nav_Link";
 import { Header } from "./header";
 import { motion } from "framer-motion";
 
 function Nav() {
+  const navigate = useNavigate();
   return (
     <div>
       <nav className="z-10 bg-[#0e0e0e] w-64 fixed flex flex-col justify-between text-center top-0 left-0 bottom-0 shadow-xl text-white font-medium">
@@ -44,7 +46,7 @@ function Nav() {
           transition={{ duration: 0.3 }}
         >
           <button
-            onClick={() => null}
+            onClick={() => navigate("/private/Contact")}
             className="w-full bg-gradient-to-r from-[#d4af37] to-[#e3c770] text-black font-semibold py-3 rounded-full shadow hover:from-[#e3c770] hover:to-[#d4af37] transition duration-300"
           >
             Me contacter
