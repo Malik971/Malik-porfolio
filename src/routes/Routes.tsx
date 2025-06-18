@@ -18,13 +18,13 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
+        index: true,
+        element: <Navigate to="/private/About" replace />,
+      },
+      {
         path: "private",
         element: <PrivateLayout />,
         children: [
-          {
-            index: true,
-            element: <Navigate to="/private/About" replace />,
-          },
           {
             path: "home",
             element: <Home />,
