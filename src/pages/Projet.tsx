@@ -1,5 +1,5 @@
 import IMG1 from "../assets/carnaval.jpg";
-import IMG2 from "../assets/1-removebg-preview.png";
+import IMG2 from "../assets/wim_photo.png";
 import IMG3 from "../assets/calculator.png";
 import IMG4 from "../assets/jeuchess.png";
 import IMG5 from "../assets/image_t-shirt_3D.jpg";
@@ -7,26 +7,34 @@ import IMG6 from "../assets/burger-baner.png";
 import IMG7 from "../assets/memeChat.png";
 import IMG8 from "../assets/gestion-naissances.png";
 import IMG9 from "../assets/DocuFlow.png";
+import IMG10 from "../assets/vanille_mada.png";
 
 const data = [
   {
+    id: 10,
+    image: IMG10,
+    title: "React | Node JS | PayPal |  Tailwind CSS",
+    github: "https://github.com/Malik971/mada-vanille",
+    demo: "https://mada-vanille.netlify.app/",
+  },
+  {
     id: 9,
     image: IMG9,
-    title: "Java | JavaScript | FreeMarker | Dockerfile",
+    title: "Java | React | FreeMarker | Dockerfile | Tailwind CSS",
     github: "https://github.com/Malik971/DocuflowPDF",
     demo: "https://documentpdf.netlify.app/",
   },
   {
     id: 8,
     image: IMG8,
-    title: "TypeScript | JavaScript",
+    title: "TypeScript | React | JavaScript | Postman | MySQL",
     github: "https://github.com/Malik971/gestion-naissances",
-    demo: "https://carnaval-montpellier.netlify.app/",
+    demo: "#",
   },
   {
     id: 7,
     image: IMG7,
-    title: "TypeScript | JavaScript | HTML | CSS",
+    title: "TypeScript | React | JavaScript | HTML | CSS",
     github: "https://github.com/Malik971/chat-random",
     demo: "https://carnaval-montpellier.netlify.app/",
   },
@@ -84,15 +92,15 @@ const Projet = () => {
         <h2 className="text-4xl font-bold">Portfolio</h2>
       </div>
 
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl">
         {data.map(({ id, image, title, github, demo }) => (
           <div
             key={id}
             className="bg-[#1a1a1a] border border-[#d4af37]/20 rounded-xl overflow-hidden shadow-lg hover:shadow-[0_0_15px_#d4af37] transition duration-300"
           >
             <img src={image} alt={title} className="w-full h-56 object-cover" />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-4">{title}</h3>
+            <div className="p-4">
+              <h3 className="text-lg font-semibold mb-4">{title}</h3>
               <div className="flex justify-between items-center">
                 <a
                   href={github}
