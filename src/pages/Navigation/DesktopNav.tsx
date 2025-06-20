@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { NAV_LINKS } from "../../utils/Nav_Link";
-import { Header } from "../header";
+import Header from "./Header";
 
 function DesktopNav() {
   const navigate = useNavigate();
