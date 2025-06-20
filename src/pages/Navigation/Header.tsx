@@ -1,4 +1,4 @@
-import photoMalik from "../assets/img_Malik.jpg";
+import photoMalik from "../../assets/img_Malik.jpg";
 import { motion } from "framer-motion";
 
 function Header() {
