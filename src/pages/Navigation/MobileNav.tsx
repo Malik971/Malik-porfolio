@@ -9,7 +9,7 @@ function MobileNav() {
   const navigate = useNavigate();
 
   return (
-    <div className="md:hidden fixed top-0 left-0 w-full z-50">
+    <div className="mobile-nav fixed top-0 left-0 w-full z-50">
       <div className="flex justify-between items-center bg-[#0e0e0e] text-white px-6 py-4 shadow-md">
         <span className="font-bold">Malik Ibo</span>
         <button onClick={() => setIsOpen(!isOpen)} className="text-2xl">
