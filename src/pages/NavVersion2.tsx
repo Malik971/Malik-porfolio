@@ -2,9 +2,9 @@ import { Link } from "react-router";
 import { useNavigate } from "react-router-dom";
 import { NAV_LINKS } from "../utils/Nav_Link";
 import { motion } from "framer-motion";
-import { Header } from "./Header";
+import Header from "./Navigation/Header";
 
-function Nav() {
+function NavVersion2() {
   const navigate = useNavigate();
   return (
     <div>
@@ -57,4 +57,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default NavVersion2;
