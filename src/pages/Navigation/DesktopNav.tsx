@@ -9,7 +9,6 @@ function DesktopNav() {
   const navigate = useNavigate();
   return (
     <nav className="desktop-nav z-10 bg-[#0e0e0e] w-64 fixed flex flex-col justify-between text-center top-0 left-0 bottom-0 shadow-xl text-white font-medium">
-
       {/* En-tête */}
       <motion.div
         className="p-6 border-b border-[#d4af37]/30"
@@ -46,12 +45,14 @@ function DesktopNav() {
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.3 }}
       >
-        <button
-          onClick={() => navigate("/private/Contact")}
-          className="w-full bg-gradient-to-r from-[#d4af37] to-[#e3c770] text-black font-semibold py-3 rounded-full shadow hover:from-[#e3c770] hover:to-[#d4af37] transition duration-300"
+        <a
+          href="https://calendly.com/malik97un/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full block bg-gradient-to-r from-[#d4af37] to-[#e3c770] text-black font-semibold py-3 rounded-full shadow hover:from-[#e3c770] hover:to-[#d4af37] transition duration-300 text-center"
         >
-          Me contacter
-        </button>
+          Prendre rendez-vous
+        </a>
       </motion.div>
     </nav>
   );

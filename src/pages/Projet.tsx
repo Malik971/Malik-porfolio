@@ -8,8 +8,24 @@ import IMG7 from "../assets/memeChat.png";
 import IMG8 from "../assets/gestion-naissances.png";
 import IMG9 from "../assets/DocuFlow.png";
 import IMG10 from "../assets/vanille_mada.png";
+import IMG11 from "../assets/sandaya_planning.png";
+import IMG12 from "../assets/carambar_API.png";
 
 const data = [
+  {
+    id: 12,
+    image: IMG12,
+    title: "React + Vite | TypeScript | Howler.js | Framer Motion | Tailwind CSS",
+    github: "https://github.com/Malik971/blague-carambar",
+    demo: "https://blague-carambar.netlify.app/",
+  },
+  {
+    id: 11,
+    image: IMG11,
+    title: "Firestore | TypeScript | React DnD | date-fns",
+    github: "https://github.com/Malik971/green-planner",
+    demo: "https://planing-sandaya.netlify.app/",
+  },
   {
     id: 10,
     image: IMG10,

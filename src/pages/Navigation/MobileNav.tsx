@@ -27,7 +27,10 @@ function MobileNav() {
           >
             <ul className="flex flex-col items-center">
               {NAV_LINKS.map(({ to, label }, i) => (
-                <li key={`mobile-link-${i}`} className="border-b border-[#d4af37]/30 w-full">
+                <li
+                  key={`mobile-link-${i}`}
+                  className="border-b border-[#d4af37]/30 w-full"
+                >
                   <Link
                     to={to}
                     className="block px-6 py-4 w-full text-center hover:text-[#d4af37]"
@@ -38,15 +41,14 @@ function MobileNav() {
                 </li>
               ))}
               <li className="w-full">
-                <button
-                  onClick={() => {
-                    setIsOpen(false);
-                    navigate("/private/Contact");
-                  }}
-                  className="w-full bg-gradient-to-r from-[#d4af37] to-[#e3c770] text-black font-semibold py-3"
+                <a
+                  href="https://calendly.com/malik97un/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full block bg-gradient-to-r from-[#d4af37] to-[#e3c770] text-black font-semibold py-3 text-center"
                 >
-                  Me contacter
-                </button>
+                  Prendre rendez-vous
+                </a>
               </li>
             </ul>
           </motion.div>
