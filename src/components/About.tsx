@@ -1,4 +1,5 @@
 import photoMalik from "../assets/photo_malik.jpg";
+import cvMalik from "../assets/CV_Malik_Ibo.pdf";
 
 function About() {
   return (
@@ -52,10 +53,14 @@ function About() {
             Vercel).
           </p>
           <div className="text-center">
-            <button className="w-40 bg-[#d4af37] text-black font-semibold py-3 rounded-full shadow hover:bg-[#e3c770] transition duration-300">
-              Me contacter
-            </button>
-          </div>
+  <a
+    href={cvMalik}
+    download="CV_Malik_Ibo.pdf"
+    className="inline-block w-40 bg-[#d4af37] text-black font-semibold py-3 rounded-full shadow hover:bg-[#e3c770] transition duration-300 text-center"
+  >
+    Télécharger CV
+  </a>
+</div>
         </div>
       </div>
     </section>
