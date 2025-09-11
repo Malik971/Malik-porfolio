@@ -8,7 +8,7 @@ import Header from "./Header";
 function DesktopNav() {
   const navigate = useNavigate();
   return (
-    <nav className="hidden md:flex z-10 bg-[#0e0e0e] w-64 fixed flex-col justify-between text-center top-0 left-0 bottom-0 shadow-xl text-white font-medium">
+    <nav className="flex z-10 bg-[#0e0e0e] w-64 fixed flex-col justify-between text-center top-0 left-0 bottom-0 shadow-xl text-white font-medium">
       {/* En-tête */}
       <motion.div
         className="p-6 border-b border-[#d4af37]/30"
