@@ -9,6 +9,7 @@ import About from "../components/About";
 import Projet from "../pages/Projet";
 import Experience from "../pages/Experiences";
 import Logbook from "../pages/Logbook";
+import Calendly from "../pages/Calendly";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
             path: "Experience",
             element: <Experience />,
           },
+          { path: "calendly", element: <Calendly /> },
           {
             path: "Carnet",
             element: <Logbook />,

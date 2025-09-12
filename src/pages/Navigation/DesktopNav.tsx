@@ -45,14 +45,12 @@ function DesktopNav() {
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.3 }}
       >
-        <a
-          href="https://calendly.com/malik97un/30min"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          to="/private/calendly"
           className="w-full block bg-gradient-to-r from-[#d4af37] to-[#e3c770] text-black font-semibold py-3 rounded-full shadow hover:from-[#e3c770] hover:to-[#d4af37] transition duration-300 text-center"
         >
           Prendre rendez-vous
-        </a>
+        </Link>
       </motion.div>
     </nav>
   );
