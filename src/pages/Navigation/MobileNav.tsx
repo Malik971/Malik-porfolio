@@ -41,14 +41,12 @@ function MobileNav() {
                 </li>
               ))}
               <li className="w-full">
-                <a
-                  href="https://calendly.com/malik97un/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/private/calendly"
                   className="w-full block bg-gradient-to-r from-[#d4af37] to-[#e3c770] text-black font-semibold py-3 text-center"
                 >
                   Prendre rendez-vous
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>
