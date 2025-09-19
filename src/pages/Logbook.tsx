@@ -1,26 +1,45 @@
+// src/pages/Logbook.tsx
+
 const logbook = [
   {
-    date: "Mai 2025",
+    date: "Juillet – Août 2025",
     entries: [
-      "Déploiement de mon projet React + Spring Boot sur Render",
-      "Prise en main de GitHub Actions pour de l'intégration continue",
-      "Refonte de mon portfolio avec thème noir-blanc-or et Tailwind",
+      "Animateur en camping (Sandaya) pendant l’été",
+      "Développement rapide d’un site de planning interne pour l’organisation",
+      "Expérience mêlant animation et code : mise en pratique des compétences React et Tailwind",
     ],
   },
   {
     date: "Juin 2025",
     entries: [
-      "Découverte et intégration de Framer Motion pour les animations UI",
-      "Sécurisation de mon backend Spring Boot (gestion des accès, erreurs)",
-      "Création d’un système de notation de compétences sur mon portfolio",
+      "Développement d’une API de blagues Carambar",
+      "Test en local avec ma propre base de données",
+      "Fonctionnalité : bouton générant une nouvelle blague à chaque clic",
     ],
   },
   {
-    date: "Juillet 2025",
+    date: "Mai – Juin 2025",
     entries: [
-      "Démarrage de ma formation Angular avec la documentation officielle",
-      "Premier projet full-stack en Angular + Spring",
-      "Approfondissement de Docker et déploiement localisé de microservices",
+      "Création d’un site e-commerce de vanille de Madagascar",
+      "Projet orienté entrepreneuriat : idée d’associer des producteurs malgaches",
+      "Expérimentation du parcours utilisateur et logique de boutique en ligne",
+    ],
+  },
+  {
+    date: "Mai 2025",
+    entries: [
+      "Lancement d’un projet personnel : DocuFlow (Java + Spring Boot)",
+      "Objectif : automatiser la génération de formulaires et PDF envoyés par mail",
+      "Premiers pas sérieux en Java et introduction à l’automatisation",
+    ],
+  },
+
+  {
+    date: "Avril 2025",
+    entries: [
+      "Début d’un bootcamp intensif pour réaliser un projet de gestion de déclarations de naissances",
+      "Projet réalisé en ~15 jours avec TypeScript, React, Postman et MySQL",
+      "Première vraie immersion full-stack avec API et gestion de données",
     ],
   },
 ];
