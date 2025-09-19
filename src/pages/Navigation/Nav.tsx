@@ -3,11 +3,12 @@ import { useEffect, useState } from "react";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 
-const DESKTOP_MIN_WIDTH = 768; // correspond à ton md si tu l'as réglé à 1024
+const DESKTOP_MIN_WIDTH = 768; // correspond à md que j'ai réglé à 768px pour les téléphones
 
 export default function Nav() {
   const [isDesktop, setIsDesktop] = useState(() =>
-    typeof window !== "undefined" ? window.innerWidth >= DESKTOP_MIN_WIDTH : true
+    typeof window !== "undefined" ? // Le ? sert à vérifier si on est côté client et typeof 
+  window.innerWidth >= DESKTOP_MIN_WIDTH : true
   );
 
   useEffect(() => {
