@@ -231,7 +231,7 @@ const data: Project[] = [
 const CATEGORIES = ["Tous", "Java", "FullStack", "React", "JS", "Web"] as const;
 type Category = (typeof CATEGORIES)[number];
 
-// ── MODAL ──────────────────────────────────────────────────────────────────
+// MODAL
 function ProjectModal({
   project,
   onClose,
@@ -342,7 +342,7 @@ function ProjectModal({
   );
 }
 
-// ── CARD ───────────────────────────────────────────────────────────────────
+// CARD
 function ProjectCard({
   project,
   index,
@@ -404,8 +404,8 @@ function ProjectCard({
   );
 }
 
-// ── PAGE ───────────────────────────────────────────────────────────────────
-const Projet = () => {
+// PAGE
+const Project = () => {
   const [selected, setSelected] = useState<Project | null>(null);
   const [activeCategory, setActiveCategory] = useState<Category>("Tous");
 
@@ -502,4 +502,4 @@ const Projet = () => {
   );
 };
 
-export default Projet;
+export default Project;
