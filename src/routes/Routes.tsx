@@ -6,10 +6,11 @@ import Home from "../pages/Home";
 import App from "../App";
 import ErrorPage from "../../ErreurPage";
 import About from "../components/About";
-import Projet from "../pages/Projet";
+import Project from "../pages/Project";
 import Experience from "../pages/Experiences";
 import Logbook from "../pages/Logbook";
 import Calendly from "../pages/Calendly";
+import Axopen from "../pages/Axopen";
 
 const router = createBrowserRouter([
   {
@@ -34,8 +35,8 @@ const router = createBrowserRouter([
             element: <About />,
           },
           {
-            path: "Projet",
-            element: <Projet />,
+            path: "Project",
+            element: <Project />,
           },
           {
             path: "Experience",
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
           {
             path: "Carnet",
             element: <Logbook />,
+          },
+          {
+            path: "Axopen",
+            element: <Axopen />,
           },
         ],
       },

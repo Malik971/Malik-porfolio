@@ -4,7 +4,7 @@ const NAV_LINKS = [
     label: "Sur moi",
   },
   {
-    to: "/private/Projet",
+    to: "/private/Project",
     label: "Mes projets",
   },
   {
@@ -15,6 +15,7 @@ const NAV_LINKS = [
     to: "/private/Carnet",
     label: "Carnet d’apprentissage",
   },
+  { to: "/private/Axopen", label: "Pourquoi Axopen ?" },
 ];
 
 export { NAV_LINKS };
