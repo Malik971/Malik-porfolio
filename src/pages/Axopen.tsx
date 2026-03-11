@@ -5,7 +5,7 @@ const reasons = [
   {
     icon: "⚙️",
     title: "Une stack qui me correspond",
-    text: "Java Spring Boot est au cœur de mes projets récents. L'univers Java d'Axopen — Spring Boot, Quarkus, jHipster — est exactement l'écosystème dans lequel je veux progresser et me spécialiser sur le long terme.",
+    text: "Java Spring Boot est au cœur de mes projets récents. L'univers Java d'Axopen Spring Boot, Quarkus, jHipster est exactement l'écosystème dans lequel je veux progresser et me spécialiser sur le long terme.",
     tag: "Backend Java",
   },
   {
@@ -23,7 +23,7 @@ const reasons = [
   {
     icon: "📈",
     title: "Montée en expertise",
-    text: "Les audits de code, les bonnes pratiques, DevOps — c'est la voie que je veux prendre. Axopen offre un terrain d'apprentissage rare où chaque projet est l'occasion de progresser sur des sujets techniques profonds.",
+    text: "Les audits de code, les bonnes pratiques, DevOps  c'est la voie que je veux prendre. Axopen offre un terrain d'apprentissage rare où chaque projet est l'occasion de progresser sur des sujets techniques profonds.",
     tag: "Progression",
   },
 ];
@@ -89,7 +89,7 @@ function Axopen() {
           </h5>
           <h2 className="text-4xl font-bold mb-4">Pourquoi Axopen ?</h2>
           <p className="text-gray-400 max-w-xl mx-auto text-sm leading-relaxed">
-            Je ne cherche pas juste un poste — je cherche un endroit où mes
+            Je ne cherche pas juste un poste je cherche un endroit où mes
             convictions techniques sont partagées et où je peux construire
             quelque chose qui dure.
           </p>
