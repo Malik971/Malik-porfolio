@@ -8,7 +8,7 @@ const NAV_LINKS = [
     label: "Mes projets",
   },
   {
-    to: "/private/Experience",
+    to: "/private/Competences",
     label: "Mes Compétences",
   },
   {

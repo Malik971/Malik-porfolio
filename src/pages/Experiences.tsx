@@ -23,8 +23,8 @@ const skills: SkillSection[] = [
       { name: "HTML / CSS", level: 5 },
       { name: "Tailwind CSS", level: 4 },
       { name: "JavaScript", level: 4 },
-      { name: "TypeScript", level: 3 },
-      { name: "Angular", level: 2, isNew: true },
+      { name: "TypeScript", level: 2 },
+      { name: "Angular", level: 1, isNew: true },
       { name: "Figma", level: 2, isNew: true },
     ],
   },
@@ -56,8 +56,8 @@ const skills: SkillSection[] = [
     items: [
       { name: "Git / GitHub", level: 4 },
       { name: "Docker (notions)", level: 2 },
-      { name: "Jenkins (notions)", level: 2 },
-      { name: "FreeMarker / PDF", level: 3 },
+      { name: "Jenkins (notions)", level: 1 },
+      { name: "FreeMarker / PDF", level: 2 },
     ],
   },
   {
@@ -65,21 +65,21 @@ const skills: SkillSection[] = [
     icon: "🌐",
     items: [
       { name: "Modèle OSI / TCP-IP", level: 3, isNew: true },
-      { name: "DNS / DHCP / NAT-PAT", level: 3, isNew: true },
+      { name: "DNS / DHCP / NAT-PAT", level: 1, isNew: true },
       { name: "VLAN / LAN / WAN", level: 3, isNew: true },
       { name: "Firewall / IDS / IPS", level: 2, isNew: true },
       { name: "SSL / TLS / HTTPS", level: 3, isNew: true },
-      { name: "Proxy / Reverse Proxy", level: 3, isNew: true },
-      { name: "Clustering / NTP", level: 2, isNew: true },
+      { name: "Proxy / Reverse Proxy", level: 2, isNew: true },
+      { name: "Clustering / NTP", level: 1, isNew: true },
     ],
   },
   {
     category: "Méthodes & Outils",
     icon: "🧠",
     items: [
-      { name: "Méthode Agile / Scrum", level: 3 },
-      { name: "Tests unitaires JUnit", level: 3 },
-      { name: "Postman", level: 4 },
+      { name: "Méthode Agile / Scrum", level: 2 },
+      { name: "Tests unitaires JUnit", level: 1 },
+      { name: "Postman", level: 2 },
       { name: "IntelliJ / VS Code", level: 4 },
     ],
   },
@@ -210,9 +210,9 @@ const Experience = () => {
           <h5 className="text-[#d4af37] uppercase tracking-widest text-sm mb-2">
             Compétences techniques
           </h5>
-          <h2 className="text-4xl font-bold mb-3">Mon expérience</h2>
+          <h2 className="text-4xl font-bold mb-3">Mes Compétences</h2>
           <p className="text-gray-500 text-sm">
-            Mis à jour · Fév. 2026 — ajout réseau, Angular & Figma
+            Mis à jour · Mars 2026 — ajout réseau, Angular & Figma
           </p>
         </motion.div>
 

@@ -39,7 +39,7 @@ const router = createBrowserRouter([
             element: <Project />,
           },
           {
-            path: "Experience",
+            path: "Competences",
             element: <Experience />,
           },
           { path: "calendly", element: <Calendly /> },

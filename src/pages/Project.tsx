@@ -13,6 +13,7 @@ import IMG9 from "../assets/DocuFlow.png";
 import IMG10 from "../assets/vanille_mada.png";
 import IMG11 from "../assets/sandaya_planning.png";
 import IMG12 from "../assets/carambar_API.png";
+import IMG13 from "../assets/hotel.png";
 
 type Project = {
   id: number;
@@ -31,7 +32,7 @@ type Project = {
 const data: Project[] = [
   {
     id: 13,
-    image: IMG8, // placeholder — remplace par ton image hotel si tu en as une
+    image: IMG13, 
     name: "Réservation d'hôtels",
     shortStack: "Java · Spring Boot · React",
     stack: ["Java", "Spring Boot", "Spring Security", "MySQL", "React", "JUnit", "Git"],
