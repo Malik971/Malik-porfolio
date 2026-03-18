@@ -10,8 +10,8 @@ type Activity = {
   emoji: string;
   label: string;
   tag: string;
-  color: string;        // accent couleur
-  bg: string;           // bg de la carte
+  color: string;        
+  bg: string;           
   border: string;
   description: string;
   stats?: { label: string; value: string }[];
@@ -319,14 +319,14 @@ function About() {
               >
                 ↓ Télécharger CV
               </motion.a>
-              <motion.a
+              {/* <motion.a
                 href="/private/Axopen"
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
                 className="inline-block border border-[#d4af37]/40 text-[#d4af37] font-medium py-3 px-7 rounded-full hover:border-[#d4af37] transition duration-300 text-sm"
               >
                 Pourquoi Axopen →
-              </motion.a>
+              </motion.a> */}
             </div>
           </motion.div>
         </div>
