@@ -14,6 +14,7 @@ import IMG10 from "../assets/vanille_mada.png";
 import IMG11 from "../assets/sandaya_planning.png";
 import IMG12 from "../assets/carambar_API.png";
 import IMG13 from "../assets/hotel.png";
+import IMG14 from "../assets/technosante.png";
 
 type Project = {
   id: number;
@@ -31,11 +32,36 @@ type Project = {
 
 const data: Project[] = [
   {
+    id: 14,
+    image: IMG14,
+    name: "Refonte du site TechnoSanté-Méditerranée",
+    shortStack: "JavaScript · React · Express",
+    stack: ["JavaScript", "React", "Express", "Node.js", "Tailwind CSS"],
+    description:
+      "Refonte du site web de TechnoSanté-Méditerranée avec une approche moderne et responsive.",
+    highlights: [
+      "Design responsive avec Tailwind CSS",
+      "Intégration de fonctionnalités interactives avec React",
+      "Optimisation des performances et SEO",
+    ],
+    github: "https://github.com/Malik971/technosante_mediterranee",
+    demo: "https://technosante-mediterranee.vercel.app/",
+    category: "Web",
+  },
+  {
     id: 13,
-    image: IMG13, 
+    image: IMG13,
     name: "Réservation d'hôtels",
     shortStack: "Java · Spring Boot · React",
-    stack: ["Java", "Spring Boot", "Spring Security", "MySQL", "React", "JUnit", "Git"],
+    stack: [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "MySQL",
+      "React",
+      "JUnit",
+      "Git",
+    ],
     description:
       "Application web full-stack de recherche et réservation d'hôtels. Conçue en binôme avec une gestion complète des rôles utilisateur et administrateur.",
     highlights: [
@@ -54,7 +80,14 @@ const data: Project[] = [
     image: IMG9,
     name: "DocuFlow PDF",
     shortStack: "Java · React · FreeMarker",
-    stack: ["Java", "Spring Boot", "React", "FreeMarker", "Dockerfile", "Tailwind CSS"],
+    stack: [
+      "Java",
+      "Spring Boot",
+      "React",
+      "FreeMarker",
+      "Dockerfile",
+      "Tailwind CSS",
+    ],
     description:
       "Application d'automatisation de génération de formulaires et de PDF envoyés par mail. Premier projet Java sérieux en production.",
     highlights: [
@@ -89,7 +122,14 @@ const data: Project[] = [
     image: IMG12,
     name: "Blagues Carambar",
     shortStack: "React · TypeScript · Howler.js",
-    stack: ["React", "Vite", "TypeScript", "Howler.js", "Framer Motion", "Tailwind CSS"],
+    stack: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Howler.js",
+      "Framer Motion",
+      "Tailwind CSS",
+    ],
     description:
       "Application légère et fun qui génère des blagues Carambar à chaque clic, avec effets sonores et animations fluides.",
     highlights: [
@@ -158,7 +198,8 @@ const data: Project[] = [
     name: "Chat Random",
     shortStack: "TypeScript · React · CSS",
     stack: ["TypeScript", "React", "JavaScript", "HTML", "CSS"],
-    description: "Application de chat aléatoire entre utilisateurs, avec interface moderne et animations.",
+    description:
+      "Application de chat aléatoire entre utilisateurs, avec interface moderne et animations.",
     highlights: [
       "Chat en temps réel entre utilisateurs aléatoires",
       "Interface animée et responsive",
@@ -173,8 +214,13 @@ const data: Project[] = [
     name: "Carnaval Montpellier",
     shortStack: "HTML · CSS",
     stack: ["HTML", "CSS"],
-    description: "Site vitrine pour le Carnaval de Montpellier. Premier projet web from scratch, axé sur le design et l'animation CSS.",
-    highlights: ["Design festif et coloré", "Animations CSS pures", "Site statique déployé sur Netlify"],
+    description:
+      "Site vitrine pour le Carnaval de Montpellier. Premier projet web from scratch, axé sur le design et l'animation CSS.",
+    highlights: [
+      "Design festif et coloré",
+      "Animations CSS pures",
+      "Site statique déployé sur Netlify",
+    ],
     github: "https://github.com/Malik971/carnavalMontpellier",
     demo: "https://carnaval-montpellier.netlify.app/",
     category: "Web",
@@ -185,8 +231,13 @@ const data: Project[] = [
     name: "Work In Music",
     shortStack: "WordPress · PHP · JS",
     stack: ["WordPress", "PHP", "JavaScript"],
-    description: "Site web professionnel pour la structure culturelle Work In Music. Réalisé pendant mon expérience chez Work In Music.",
-    highlights: ["CMS WordPress avec thème personnalisé", "Formulaires de contact PHP", "Site en production : workinmusic.fr"],
+    description:
+      "Site web professionnel pour la structure culturelle Work In Music. Réalisé pendant mon expérience chez Work In Music.",
+    highlights: [
+      "CMS WordPress avec thème personnalisé",
+      "Formulaires de contact PHP",
+      "Site en production : workinmusic.fr",
+    ],
     github: "https://github.com/Malik971/CoursPython6",
     demo: "https://workinmusic.fr/",
     category: "Web",
@@ -197,8 +248,13 @@ const data: Project[] = [
     name: "Calculatrice",
     shortStack: "JavaScript · HTML · CSS",
     stack: ["JavaScript", "HTML", "CSS"],
-    description: "Calculatrice web fonctionnelle avec historique des opérations et interface soignée.",
-    highlights: ["Opérations de base + historique", "Interface responsive", "JavaScript vanilla pur"],
+    description:
+      "Calculatrice web fonctionnelle avec historique des opérations et interface soignée.",
+    highlights: [
+      "Opérations de base + historique",
+      "Interface responsive",
+      "JavaScript vanilla pur",
+    ],
     github: "https://github.com/Malik971/calculatrices",
     demo: "https://fabulous-otter-35c137.netlify.app/",
     category: "JS",
@@ -209,8 +265,13 @@ const data: Project[] = [
     name: "Jeu d'échecs",
     shortStack: "JavaScript · HTML",
     stack: ["JavaScript", "HTML", "CSS"],
-    description: "Jeu d'échecs jouable dans le navigateur avec logique de déplacement complète des pièces.",
-    highlights: ["Logique de mouvement de toutes les pièces", "Tour par tour · détection d'échec", "JavaScript pur sans librairie"],
+    description:
+      "Jeu d'échecs jouable dans le navigateur avec logique de déplacement complète des pièces.",
+    highlights: [
+      "Logique de mouvement de toutes les pièces",
+      "Tour par tour · détection d'échec",
+      "JavaScript pur sans librairie",
+    ],
     github: "https://github.com/Malik971/jeuChess",
     demo: "https://jeuchess.netlify.app/",
     category: "JS",
@@ -221,8 +282,13 @@ const data: Project[] = [
     name: "Site Burger",
     shortStack: "JavaScript · HTML · CSS",
     stack: ["JavaScript", "HTML", "CSS"],
-    description: "Site vitrine pour un restaurant burger avec menu interactif et design appétissant.",
-    highlights: ["Menu interactif avec filtres", "Animations au scroll", "Design food-oriented"],
+    description:
+      "Site vitrine pour un restaurant burger avec menu interactif et design appétissant.",
+    highlights: [
+      "Menu interactif avec filtres",
+      "Animations au scroll",
+      "Design food-oriented",
+    ],
     github: "https://github.com/Malik971/SiteBurger",
     demo: "https://main--site-burger.netlify.app/",
     category: "Web",
@@ -286,7 +352,9 @@ function ProjectModal({
           </div>
 
           <div className="p-6">
-            <h2 className="text-2xl font-bold text-white mb-1">{project.name}</h2>
+            <h2 className="text-2xl font-bold text-white mb-1">
+              {project.name}
+            </h2>
             <p className="text-[#d4af37] text-sm mb-4">{project.shortStack}</p>
 
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
@@ -296,7 +364,10 @@ function ProjectModal({
             {/* Highlights */}
             <ul className="space-y-2 mb-6">
               {project.highlights.map((h, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
+                <li
+                  key={i}
+                  className="flex items-start gap-2 text-sm text-gray-300"
+                >
                   <span className="text-[#d4af37] mt-0.5 shrink-0">▸</span>
                   {h}
                 </li>
@@ -358,7 +429,11 @@ function ProjectCard({
       initial={{ opacity: 0, y: 32 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.45, delay: (index % 4) * 0.07, ease: "easeOut" }}
+      transition={{
+        duration: 0.45,
+        delay: (index % 4) * 0.07,
+        ease: "easeOut",
+      }}
       whileHover={{ y: -6, transition: { duration: 0.2 } }}
       onClick={onClick}
       className="group cursor-pointer bg-[#1a1a1a] border border-[#d4af37]/20 rounded-xl overflow-hidden shadow-lg hover:shadow-[0_0_22px_rgba(212,175,55,0.18)] hover:border-[#d4af37]/50 transition-all duration-300"
@@ -416,7 +491,10 @@ const Project = () => {
       : data.filter((p) => p.category === activeCategory);
 
   return (
-    <section id="portfolio" className="bg-[#0e0e0e] text-white py-20 px-6 relative overflow-hidden">
+    <section
+      id="portfolio"
+      className="bg-[#0e0e0e] text-white py-20 px-6 relative overflow-hidden"
+    >
       {/* Ambient glow */}
       <div
         aria-hidden

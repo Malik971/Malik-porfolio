@@ -12,6 +12,18 @@ type TimelineEntry = {
 
 const entries: TimelineEntry[] = [
   {
+    date: "Mars 2026",
+    title: "Refonte site Développeur Web",
+    org: "TechnoSanté-Mediterranée",
+    type: "xp",
+    location: "Montpellier",
+    bullets: [
+      "Refonte du site vitrine pour améliorer la clarté, la navigation et la présentation des services",
+      "Réorganisation des contenus et amélioration de l’expérience utilisateur",
+      "Intégration et ajustements techniques pour moderniser la présence web de l’entreprise: technosante-mediterranee.vercel.app",
+    ],
+  },
+  {
     date: "Sept. 2025 → Jan. 2026",
     title: "Concepteur Développeur d'Applications",
     org: "Formation Dawan",
