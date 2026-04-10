@@ -374,14 +374,14 @@ function About() {
               >
                 ↓ Télécharger CV
               </motion.a>
-              {/* <motion.a
-                href="/private/Axopen"
+              <motion.a
+                href="/private/Libriciel"
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
                 className="inline-block border border-[#d4af37]/40 text-[#d4af37] font-medium py-3 px-7 rounded-full hover:border-[#d4af37] transition duration-300 text-sm"
               >
-                Pourquoi Axopen →
-              </motion.a> */}
+                Pourquoi Libriciel →
+              </motion.a>
             </div>
           </motion.div>
         </div>

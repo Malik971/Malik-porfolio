@@ -3,37 +3,56 @@ import { easeOut, motion } from "framer-motion";
 
 const reasons = [
   {
-    icon: "⚙️",
-    title: "Une stack qui me correspond",
-    text: "Java Spring Boot est au cœur de mes projets récents. L'univers Java d'Axopen Spring Boot, Quarkus, jHipster est exactement l'écosystème dans lequel je veux progresser et me spécialiser sur le long terme.",
-    tag: "Backend Java",
+    icon: "🔌",
+    title: 'Je pense "intégration" avant "feature"',
+    text: "Avec Spring Boot, j'ai construit des APIs REST, géré des flux d'authentification OAuth2 via Spring Security, lu des payloads JSON/XML, diagnostiqué des 401 vs 403. Quand un partenaire bloque sur un appel API Libriciel, je ne pars pas dans le vide, j'ai déjà vécu ce côté-là de la connexion.",
+    tag: "REST · OAuth2 · Spring",
   },
   {
-    icon: "🏗️",
-    title: "La vision SI durable",
-    text: "Axopen construit des SI solides qui durent. Cette vision me parle directement : chez Oc-Santé j'ai vu ce que ça signifie de penser architecture et durabilité des données, pas juste livrer du code.",
-    tag: "Architecture",
+    icon: "🎯",
+    title: "Qualifier avant d'exécuter",
+    text: "Gardien de but depuis 15 ans : on ne plonge pas avant d'avoir lu la situation. Face à un partenaire éditeur, mon premier réflexe sera de poser les bonnes questions, quel flux métier, quel endpoint, quel format attendu, qui est l'interlocuteur technique, avant toute chose. C'est exactement le muscle que le poste demande.",
+    tag: "Qualification",
+  },
+  {
+    icon: "📖",
+    title: "Documenter, c'est déjà ma façon de coder",
+    text: "Ce portfolio est lui-même une documentation. France-IOI en accès public, Duolingo 365 jours de streak, formations structurées projet par projet, j'ai l'habitude de rendre mes apprentissages lisibles pour d'autres. Créer des guides d'intégration ou des supports sandbox pour des éditeurs partenaires, c'est dans ma nature.",
+    tag: "Pédagogie",
   },
   {
     icon: "🤝",
-    title: "Culture technique & humaine",
-    text: "60 passionnés, petites équipes efficaces, transparence et pragmatisme. C'est l'environnement où j'apprends le mieux : des gens qui partagent leurs convictions techniques et qui codent avec exigence.",
-    tag: "Culture",
-  },
-  {
-    icon: "📈",
-    title: "Montée en expertise",
-    text: "Les audits de code, les bonnes pratiques, DevOps  c'est la voie que je veux prendre. Axopen offre un terrain d'apprentissage rare où chaque projet est l'occasion de progresser sur des sujets techniques profonds.",
-    tag: "Progression",
+    title: "L'ADN coopératif me parle",
+    text: "Une SCOP à gouvernance démocratique, 98 % du capital détenu par les salarié·e·s, une culture logiciel libre, c'est tout le contraire du \"startup bling-bling\". J'ai grandi dans un sport collectif où l'ego individuel coule l'équipe. Chez Libriciel, je viens construire, pas juste exécuter.",
+    tag: "Culture · Collectif",
   },
 ];
 
 const alignments = [
-  { axopen: "Spring Boot / Quarkus", moi: "Spring Boot · Spring Security · Maven" },
-  { axopen: "Architecture Microservices", moi: "API REST · Conception logicielle orientée services" },
-  { axopen: "Tests & Qualité de code", moi: "JUnit · bonnes pratiques · code review" },
-  { axopen: "Équipes petites & efficaces", moi: "Travail en binôme · Git collaboratif · Agile" },
-  { axopen: "Sincérité & Pragmatisme", moi: "Rigueur · transparence · adaptabilité" },
+  {
+    libriciel: "REST / SOAP / OAuth2 / OpenID Connect",
+    moi: "Spring Boot REST · Spring Security OAuth2 · payloads JSON/XML",
+  },
+  {
+    libriciel: "Assistance technique API partenaires",
+    moi: "Diagnostic HTTP · lecture d'erreurs · logique client-serveur",
+  },
+  {
+    libriciel: "Documentation & support pédagogique",
+    moi: "Portfolio public · France-IOI · formation projet par projet",
+  },
+  {
+    libriciel: "Environnements sandbox / bac à sable",
+    moi: "Docker · Git · config d'environnements de dev isolés",
+  },
+  {
+    libriciel: "Communication écrite technique",
+    moi: "Anglais B2 (365j Duolingo) · rédaction structurée",
+  },
+  {
+    libriciel: "Curiosité logiciel libre & open source",
+    moi: "GitHub public · stack open source · formation continue Udemy",
+  },
 ];
 
 const containerVariants = {
@@ -51,7 +70,7 @@ const rowVariants = {
   visible: { opacity: 1, x: 0, transition: { duration: 0.4, ease: easeOut } },
 };
 
-function Axopen() {
+function Libriciel() {
   return (
     <section
       id="axopen"
@@ -87,11 +106,11 @@ function Axopen() {
           <h5 className="text-[#d4af37] uppercase tracking-widest text-sm mb-2">
             Ma candidature
           </h5>
-          <h2 className="text-4xl font-bold mb-4">Pourquoi Axopen ?</h2>
+          <h2 className="text-4xl font-bold mb-4">Pourquoi Libriciel SCOP ?</h2>
           <p className="text-gray-400 max-w-xl mx-auto text-sm leading-relaxed">
-            Je ne cherche pas juste un poste je cherche un endroit où mes
-            convictions techniques sont partagées et où je peux construire
-            quelque chose qui dure.
+            Je ne cherche pas juste un poste DevRel, je cherche un rôle où la
+            technique, la pédagogie et l'utilité concrète convergent. Libriciel
+            coche les trois cases.
           </p>
         </motion.div>
 
@@ -130,12 +149,12 @@ function Axopen() {
           className="mb-16"
         >
           <h3 className="text-center text-xl font-semibold text-[#e3c770] mb-6">
-            Ce qu'Axopen cherche · Ce que j'apporte
+            Ce que Libriciel cherche · Ce que j'apporte
           </h3>
           <div className="bg-[#1a1a1a] border border-[#d4af37]/20 rounded-xl overflow-hidden">
             <div className="grid grid-cols-2 bg-[#d4af37]/10 border-b border-[#d4af37]/20 px-6 py-3">
               <span className="text-xs uppercase tracking-widest text-[#d4af37] font-semibold">
-                Axopen
+                Libriciel
               </span>
               <span className="text-xs uppercase tracking-widest text-[#d4af37] font-semibold">
                 Malik
@@ -147,14 +166,14 @@ function Axopen() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              {alignments.map(({ axopen, moi }, i) => (
+              {alignments.map(({ libriciel, moi }, i) => (
                 <motion.div
                   key={i}
                   variants={rowVariants}
                   className="grid grid-cols-2 px-6 py-4 border-b border-white/5 last:border-0 hover:bg-white/[0.02] transition-colors"
                 >
                   <span className="text-sm text-gray-300 flex items-center gap-2">
-                    <span className="text-[#d4af37]">✦</span> {axopen}
+                    <span className="text-[#d4af37]">✦</span> {libriciel}
                   </span>
                   <span className="text-sm text-gray-400 flex items-center gap-2">
                     <span className="text-green-400">✓</span> {moi}
@@ -174,13 +193,13 @@ function Axopen() {
           className="relative border-l-4 border-[#d4af37] bg-[#1a1a1a] rounded-r-xl px-8 py-6"
         >
           <p className="text-gray-200 text-base leading-relaxed italic">
-            "Chez Axopen j'ai trouvé un partenaire technique qui partage ma
-            vision : du code utile, maintenable, et construit avec rigueur.
-            C'est exactement le type d'équipe dans laquelle je veux évoluer
-            et progresser sur les prochaines années."
+            "Chez Libriciel, le DEVREL est le pont entre deux systèmes qui ne se
+            parlent pas encore. Ce pont, je sais le construire, j'ai appris à
+            lire un flux avant d'agir, à poser la bonne question avant d'ouvrir
+            Postman, et à rendre technique ce qui était flou."
           </p>
           <cite className="block mt-3 text-[#d4af37] text-xs uppercase tracking-widest not-italic">
-            — Malik Ibo, candidat Développeur Java
+            — Malik Ibo, candidat DEVREL
           </cite>
 
           <motion.a
@@ -197,4 +216,4 @@ function Axopen() {
   );
 }
 
-export default Axopen;
+export default Libriciel;

@@ -15,7 +15,7 @@ const NAV_LINKS = [
     to: "/private/Carnet",
     label: "Carnet d’apprentissage",
   },
-  // { to: "/private/Axopen", label: "Pourquoi Axopen ?" },
+  { to: "/private/Libriciel", label: "Pourquoi Libriciel ?" },
 ];
 
 export { NAV_LINKS };

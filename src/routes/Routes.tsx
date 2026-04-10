@@ -10,7 +10,7 @@ import Project from "../pages/Project";
 import Experience from "../pages/Experiences";
 import Logbook from "../pages/Logbook";
 import Calendly from "../pages/Calendly";
-import Axopen from "../pages/Axopen";
+import Libriciel from "../pages/Libriciel";
 
 const router = createBrowserRouter([
   {
@@ -48,8 +48,8 @@ const router = createBrowserRouter([
             element: <Logbook />,
           },
           {
-            path: "Axopen",
-            element: <Axopen />,
+            path: "Libriciel",
+            element: <Libriciel />,
           },
         ],
       },
