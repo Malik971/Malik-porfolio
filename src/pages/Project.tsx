@@ -13,7 +13,7 @@ import IMG9 from "../assets/DocuFlow.png";
 import IMG10 from "../assets/vanille_mada.png";
 import IMG11 from "../assets/sandaya_planning.png";
 import IMG12 from "../assets/carambar_API.png";
-import IMG13 from "../assets/hotel.png";
+import IMG13 from "../assets/hotel_montpellier.png";
 import IMG14 from "../assets/technosante.png";
 
 type Project = {
