@@ -36,7 +36,7 @@ const data: Project[] = [
     id: 15,
     image: IMG15,
     name: "Intégration de Pastell, le produit phare de Libriciel",
-    shortStack: "JavaScript · React · Express",
+    shortStack: "Spring Boot 4.0 · React 18 · PostgreSQL",
     stack: ["Spring Boot 4.0", "Java 21", "React 18", "Tailwind CSS", "PostgreSQL", "Flyway"],
     description:
       "Plateforme de réservation hôtelière sur Montpellier et sa région, avec une intégration Pastell pour la dématérialisation des dossiers de réservation.",
