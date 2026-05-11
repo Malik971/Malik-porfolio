@@ -15,6 +15,7 @@ import IMG11 from "../assets/sandaya_planning.png";
 import IMG12 from "../assets/carambar_API.png";
 import IMG13 from "../assets/hotel_montpellier.png";
 import IMG14 from "../assets/technosante.png";
+import IMG15 from "../assets/pastell-demo.png";
 
 type Project = {
   id: number;
@@ -31,6 +32,23 @@ type Project = {
 };
 
 const data: Project[] = [
+  {
+    id: 15,
+    image: IMG15,
+    name: "Intégration de Pastell, le produit phare de Libriciel",
+    shortStack: "JavaScript · React · Express",
+    stack: ["Spring Boot 4.0", "Java 21", "React 18", "Tailwind CSS", "PostgreSQL", "Flyway"],
+    description:
+      "Plateforme de réservation hôtelière sur Montpellier et sa région, avec une intégration Pastell pour la dématérialisation des dossiers de réservation.",
+    highlights: [
+      "Intégration de Pastell pour la gestion des dossiers de réservation",
+      "Back-end Java Spring Boot 4.0 avec base de données PostgreSQL",
+      "Front-end React 18 avec design moderne et responsive",
+    ],
+    github: "https://github.com/Malik971/ProjetHotel-management",
+    demo: "https://pastell-demo.netlify.app/",
+    category: "FullStack",
+  },
   {
     id: 14,
     image: IMG14,
