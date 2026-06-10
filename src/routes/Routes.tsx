@@ -2,13 +2,12 @@
 
 import { createBrowserRouter, Navigate } from "react-router";
 import PrivateLayout from "../layout/PrivateLayout";
-import Home from "../pages/Home";
 import App from "../App";
 import ErrorPage from "../../ErreurPage";
 import About from "../components/About";
 import Project from "../pages/Project";
 import Experience from "../pages/Experiences";
-import Logbook from "../pages/Logbook";
+import Parcours from "../pages/Parcours";
 import Calendly from "../pages/Calendly";
 import Libriciel from "../pages/Libriciel";
 
@@ -27,10 +26,6 @@ const router = createBrowserRouter([
         element: <PrivateLayout />,
         children: [
           {
-            path: "home",
-            element: <Home />,
-          },
-          {
             path: "About",
             element: <About />,
           },
@@ -45,7 +40,7 @@ const router = createBrowserRouter([
           { path: "calendly", element: <Calendly /> },
           {
             path: "Carnet",
-            element: <Logbook />,
+            element: <Parcours />,
           },
           {
             path: "Libriciel",

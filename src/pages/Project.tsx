@@ -16,6 +16,7 @@ import IMG12 from "../assets/carambar_API.png";
 import IMG13 from "../assets/hotel_montpellier.png";
 import IMG14 from "../assets/technosante.png";
 import IMG15 from "../assets/pastell-demo.png";
+import IMG16 from "../assets/shopify-vanille.png";
 
 type Project = {
   id: number;
@@ -32,6 +33,25 @@ type Project = {
 };
 
 const data: Project[] = [
+  {
+    id: 16,
+    image: IMG16,
+    name: "Mada Arôme",
+    shortStack: "Shopify · Liquid · CSS",
+    stack: ["Shopify", "Liquid", "Dawn v15", "CSS Custom Properties", "Vanilla JS", "Shopify CLI"],
+    description:
+      "Thème B2B sur-mesure pour un importateur de vanille de Madagascar, ciblant chefs, pâtissiers et chocolatiers professionnels. Architecture éditoriale sobre, sections Liquid custom et système de design complet aligné sur une charte maison de négoce.",
+    highlights: [
+      "Thème Dawn v15 entièrement refondu avec palette, typographie et sections custom",
+      "Hover-swap d'image produit en CSS pur, sans JS (z-index + opacity)",
+      "5 color schemes merchant-editable mappés sur la charte ivoire/brun/or",
+      "Sections Liquid avec schémas éditeur complets (hero, réassurance, galerie, récit)",
+    ],
+    github: "https://github.com/Malik971/mad-arome",
+    demo: "https://madarome.myshopify.com",
+    featured: true,
+    category: "Web",
+  },
   {
     id: 15,
     image: IMG15,

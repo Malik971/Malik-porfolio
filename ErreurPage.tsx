@@ -6,7 +6,7 @@ function ErrorPage() {
       <Link
         type="button"
         className="border-4 rounded-md border-blue-700 text-blue-700 px-46 py-4 hover:bg-blue-600 hover:text-white transition-colors duration-300"
-        to={"/private/home"}
+        to={"/private/About"}
       >
         Retour à L'acceuil
       </Link>

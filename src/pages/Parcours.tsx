@@ -1,4 +1,4 @@
-// src/pages/Logbook.tsx
+// src/pages/Parcours.tsx
 import { motion, easeOut } from "framer-motion";
 
 type TimelineEntry = {
@@ -11,6 +11,30 @@ type TimelineEntry = {
 };
 
 const entries: TimelineEntry[] = [
+  {
+    date: "Avr. → En cours",
+    title: "Boutique e-commerce Shopify - Mada Arôme",
+    org: "Projet entrepreneurial",
+    type: "xp",
+    location: "Montpellier",
+    bullets: [
+      "Création d'une boutique B2B sur-mesure (Shopify · Liquid · Dawn v15) pour un importateur de vanille de Madagascar",
+      "Mise en place du tunnel de paiement, de la gestion des commandes, du stock et de la logistique d'expédition",
+      "Sections Liquid custom, design system complet et color schemes éditables - madarome.myshopify.com",
+    ],
+  },
+  {
+    date: "Avr. → En cours",
+    title: "Interopérabilité & intégration du bus Pastell (Libriciel)",
+    org: "Projet de spécialisation",
+    type: "xp",
+    location: "Montpellier",
+    bullets: [
+      "Intégration bidirectionnelle d'une plateforme hôtelière au bus Pastell : dossiers, journal, machine à états",
+      "Sécurisation OAuth2 / OIDC (Keycloak · PKCE · JWT multi-émetteurs) et résilience (retry 2 niveaux, détection de divergence)",
+      "Montée en compétences interopérabilité, dématérialisation et orchestration de flux entre systèmes",
+    ],
+  },
   {
     date: "Mars 2026",
     title: "Refonte site Développeur Web",
@@ -91,7 +115,7 @@ const entries: TimelineEntry[] = [
   },
   {
     date: "2020 → 2022",
-    title: "BTS SIO — Option SLAM",
+    title: "BTS SIO - Option SLAM",
     org: "Lycée Baimbridge",
     type: "edu",
     location: "Guadeloupe 971",
@@ -108,7 +132,7 @@ const itemVariants = {
   visible: { opacity: 1, x: 0, transition: { duration: 0.45, ease: easeOut } },
 };
 
-function Logbook() {
+function Parcours() {
   return (
     <section id="timeline" className="bg-[#0e0e0e] text-white py-20 px-6">
       <div className="container mx-auto max-w-4xl">
@@ -223,4 +247,4 @@ function Logbook() {
   );
 }
 
-export default Logbook;
+export default Parcours;

@@ -45,9 +45,22 @@ const skills: SkillSection[] = [
     icon: "🗄️",
     items: [
       { name: "SQL / MySQL", level: 5 },
+      { name: "PostgreSQL", level: 3, isNew: true },
       { name: "MongoDB", level: 3 },
       { name: "Data Warehouse", level: 2 },
       { name: "Python", level: 3 },
+    ],
+  },
+  {
+    category: "E-commerce & Intégration",
+    icon: "🛒",
+    items: [
+      { name: "Shopify / Liquid", level: 3, isNew: true },
+      { name: "Intégration paiement (PayPal · Shopify)", level: 3, isNew: true },
+      { name: "Interopérabilité (REST / Bus)", level: 3, isNew: true },
+      { name: "OAuth2 / OIDC · Keycloak", level: 3, isNew: true },
+      { name: "Webhooks / Polling", level: 2, isNew: true },
+      { name: "Gestion commandes & stock", level: 2, isNew: true },
     ],
   },
   {
@@ -212,7 +225,7 @@ const Experience = () => {
           </h5>
           <h2 className="text-4xl font-bold mb-3">Mes Compétences</h2>
           <p className="text-gray-500 text-sm">
-            Mis à jour · Mars 2026 — ajout réseau, Angular & Figma
+            Mis à jour · Juin 2026 — e-commerce, interopérabilité & intégration de paiement
           </p>
         </motion.div>
 

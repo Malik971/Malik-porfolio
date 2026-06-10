@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import photoMalik from "../assets/photo_malik.jpg";
 import cvMalik from "../assets/CV Assistant Informatique et web - Malik.pdf";
 
-// ── DONNÉES ACTIVITÉS ──────────────────────────────────────────────────────
+// ── DONNÉES ACTIVITÉS
 type Activity = {
   id: string;
   emoji: string;
@@ -165,7 +165,7 @@ const activities: Activity[] = [
   },
 ];
 
-// ── CARD ACTIVITÉ ──────────────────────────────────────────────────────────
+// ── CARD ACTIVITÉS
 function ActivityCard({ act, index }: { act: Activity; index: number }) {
   const [hovered, setHovered] = useState(false);
 
@@ -255,7 +255,7 @@ function ActivityCard({ act, index }: { act: Activity; index: number }) {
   );
 }
 
-// ── PAGE ───────────────────────────────────────────────────────────────────
+// ── PAGE
 function About() {
   return (
     <section
@@ -353,13 +353,13 @@ function About() {
                 Apprendre vite et apprendre tous les jours.
               </span>{" "}
               Que ce soit sur Duolingo pour l'anglais, France IOI pour les
-              algorithmes, ou Udemy pour approfondir mes stacks — je traite
+              algorithmes, ou Udemy pour approfondir mes stacks - je traite
               chaque compétence comme un niveau à passer.
             </p>
             <p>
               En dehors du code, je suis gardien de foot depuis 15 ans, joueur
               d'échecs, et accro à Clash Royale. Des activités qui entraînent la
-              concentration, la stratégie et la résilience — exactement ce dont
+              concentration, la stratégie et la résilience - exactement ce dont
               un bon développeur a besoin.
             </p>
 
@@ -445,14 +445,14 @@ function About() {
             "
           </div>
           <p className="text-gray-300 text-base leading-relaxed italic">
-            Gardien de but, joueur d'échecs, ou développeur — j'ai toujours eu
+            Gardien de but, joueur d'échecs, ou développeur - j'ai toujours eu
             le même objectif :{" "}
             <span className="text-[#e3c770] not-italic font-semibold">
               lire la situation, anticiper, et exécuter.
             </span>
           </p>
           <div className="mt-6 text-[#d4af37] text-sm font-medium">
-            — Malik Ibo
+             Malik Ibo
           </div>
         </motion.div>
       </div>
