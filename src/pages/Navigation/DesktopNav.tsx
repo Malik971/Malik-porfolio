@@ -1,12 +1,9 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { NAV_LINKS } from "../../utils/Nav_Link";
 import Header from "./Header";
 
 function DesktopNav() {
-  const navigate = useNavigate();
   return (
     <nav className="desktop-nav z-10 bg-[#0e0e0e] w-64 fixed flex flex-col justify-between text-center top-0 left-0 bottom-0 shadow-xl text-white font-medium">
       {/* En-tête */}
@@ -46,7 +43,7 @@ function DesktopNav() {
         transition={{ duration: 0.3 }}
       >
         <Link
-          to="/private/calendly"
+          to="/contact"
           className="w-full block bg-gradient-to-r from-[#d4af37] to-[#e3c770] text-black font-semibold py-3 rounded-full shadow hover:from-[#e3c770] hover:to-[#d4af37] transition duration-300 text-center"
         >
           Prendre rendez-vous

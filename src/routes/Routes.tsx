@@ -19,38 +19,18 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Navigate to="/private/About" replace />,
+        element: <Navigate to="/about" replace />,
       },
       {
-        path: "private",
         element: <PrivateLayout />,
         children: [
-          {
-            path: "About",
-            element: <About />,
-          },
-          {
-            path: "Project",
-            element: <Project />,
-          },
-          {
-            path: "Competences",
-            element: <Experience />,
-          },
-          { path: "calendly", element: <Calendly /> },
-          {
-            path: "Carnet",
-            element: <Parcours />,
-          },
-          {
-            path: "Libriciel",
-            element: <Libriciel />,
-          },
+          { path: "about", element: <About /> },
+          { path: "projets", element: <Project /> },
+          { path: "competences", element: <Experience /> },
+          { path: "parcours", element: <Parcours /> },
+          { path: "libriciel", element: <Libriciel /> },
+          { path: "contact", element: <Calendly /> },
         ],
-      },
-      {
-        path: "public",
-        element: <div>Page publique sans Nav</div>,
       },
     ],
   },

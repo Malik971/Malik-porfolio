@@ -148,20 +148,29 @@ const activities: Activity[] = [
       { label: "Pratique", value: "Ligne & hors ligne" },
     ],
   },
+];
+
+// ── DONNÉES MÉTHODE DE TRAVAIL
+const method = [
   {
-    id: "clashroyale",
-    emoji: "👑",
-    label: "Clash Royale",
-    tag: "Jeu mobile · Stratégie",
-    color: "#c084fc",
-    bg: "rgba(192,132,252,0.06)",
-    border: "rgba(192,132,252,0.25)",
-    description:
-      "Clash Royale pour la stratégie temps réel, la gestion de ressources et la compétition. Un jeu d'esprit sous pression.",
-    stats: [
-      { label: "Style", value: "Deck contrôle" },
-      { label: "Ligue", value: "Arènes avancées" },
-    ],
+    icon: "🤖",
+    title: "Je pilote l'IA, je ne la subis pas",
+    text: "Cadrage du contexte, gestion des tokens dont je dispose, prompts et agents supervisés. L'IA accélère l'exécution, mais l'architecture et les décisions restent les miennes.",
+  },
+  {
+    icon: "📝",
+    title: "Documentation & logging systématiques",
+    text: "Commentaires, logs et docs intégrés au code : autant pour que mes agents IA s'y retrouvent que pour rester maître de chaque fonction. Lisible, traçable, jamais du spaghetti.",
+  },
+  {
+    icon: "🔍",
+    title: "Supervision & esprit critique",
+    text: "J'observe, je teste, je comprends par analogie et je me pose les bonnes questions avant de valider. Apprendre et itérer vite, mais bien, sur des bases solides.",
+  },
+  {
+    icon: "🔗",
+    title: "Interopérabilité & maîtrise humaine",
+    text: "Connecter des systèmes fiables et éthiques qui gardent l'humain aux commandes, sans dépendre entièrement de l'IA. C'est exactement ce que prouve mon intégration du bus Pastell.",
   },
 ];
 
@@ -338,29 +347,38 @@ function About() {
             </div>
 
             <p>
-              Développeur full-stack passionné, je combine rigueur technique et
-              curiosité permanente. Formé au titre{" "}
+              Développeur full-stack passionné, formé au titre{" "}
               <span className="text-[#e3c770] font-medium">
                 Concepteur Développeur d'Applications
               </span>
-              , j'ai déjà conçu des projets concrets : génération de PDF,
-              automatisation, e-commerce, et des applications Java Spring Boot
-              end-to-end.
+              . J'ai conçu des projets concrets de bout en bout : applications{" "}
+              <span className="text-white font-medium">Java · Spring Boot</span>,
+              sites e-commerce, génération de PDF et automatisation, jusqu'à
+              l'intégration d'une plateforme métier au bus d'orchestration
+              Pastell de Libriciel.
             </p>
             <p>
-              Ma force ?{" "}
+              Ma vraie force, c'est ma méthode :{" "}
               <span className="text-white font-medium">
-                Apprendre vite et apprendre tous les jours.
+                je pilote l'IA, je ne la subis pas.
               </span>{" "}
-              Que ce soit sur Duolingo pour l'anglais, France IOI pour les
-              algorithmes, ou Udemy pour approfondir mes stacks - je traite
-              chaque compétence comme un niveau à passer.
+              Je cadre le contexte, je gère les tokens dont je dispose, je
+              documente et je logge en continu : mes commentaires servent autant
+              à mes agents qu'à moi, pour rester maître de chaque fonction et
+              éviter le code spaghetti.
             </p>
             <p>
-              En dehors du code, je suis gardien de foot depuis 15 ans, joueur
-              d'échecs, et accro à Clash Royale. Des activités qui entraînent la
-              concentration, la stratégie et la résilience - exactement ce dont
-              un bon développeur a besoin.
+              J'apprends et j'itère vite, mais bien : je teste, je compare par
+              analogie, je me pose les bonnes questions. J'ai développé un vrai
+              sens de la{" "}
+              <span className="text-[#e3c770] font-medium">
+                supervision et de l'esprit critique
+              </span>
+              , avec la conviction qu'il faut garder la maîtrise humaine :
+              concevoir des systèmes interopérables, fiables et éthiques, qui ne
+              dépendent pas entièrement de l'IA. En dehors du code : gardien de
+              but depuis 15 ans et joueur d'échecs : la même logique de lire,
+              anticiper, exécuter.
             </p>
 
             {/* CTA */}
@@ -375,7 +393,7 @@ function About() {
                 ↓ Télécharger CV
               </motion.a>
               <motion.a
-                href="/private/Libriciel"
+                href="/libriciel"
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
                 className="inline-block border border-[#d4af37]/40 text-[#d4af37] font-medium py-3 px-7 rounded-full hover:border-[#d4af37] transition duration-300 text-sm"
@@ -385,6 +403,52 @@ function About() {
             </div>
           </motion.div>
         </div>
+
+        {/* ── SECTION MÉTHODE ── */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-24"
+        >
+          <div className="flex items-center gap-4 mb-4">
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent" />
+            <div className="text-center">
+              <p className="text-[#d4af37] text-xs uppercase tracking-widest mb-1">
+                Comment je travaille
+              </p>
+              <h3 className="text-2xl font-bold text-white">Ma méthode</h3>
+            </div>
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#d4af37]/30 to-transparent" />
+          </div>
+
+          <p className="text-center text-gray-500 text-sm max-w-2xl mx-auto mb-10 leading-relaxed">
+            Aujourd'hui, la différence ne se joue plus sur le code complexe :
+            elle se joue sur la manière de superviser, documenter et garder la
+            main. Voilà comment je construis des solutions robustes.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {method.map((m, i) => (
+              <motion.div
+                key={m.title}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.45, delay: i * 0.08 }}
+                whileHover={{ borderColor: "rgba(212,175,55,0.5)" }}
+                className="bg-[#1a1a1a] border border-[#d4af37]/20 rounded-2xl p-6 flex flex-col gap-3 transition-colors duration-300"
+              >
+                <span className="text-3xl">{m.icon}</span>
+                <h4 className="text-base font-semibold text-[#e3c770] leading-snug">
+                  {m.title}
+                </h4>
+                <p className="text-sm text-gray-400 leading-relaxed">{m.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
 
         {/* ── SECTION ACTIVITÉS ── */}
         <motion.div
@@ -413,7 +477,7 @@ function About() {
             {[
               { icon: "📚", label: "4 plateformes d'apprentissage" },
               { icon: "⚽", label: "3 sports pratiqués" },
-              { icon: "🎮", label: "2 jeux de stratégie" },
+              { icon: "♟️", label: "Échecs & logique" },
             ].map(({ icon, label }) => (
               <div
                 key={label}

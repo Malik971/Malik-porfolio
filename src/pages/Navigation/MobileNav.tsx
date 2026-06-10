@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { NAV_LINKS } from "../../utils/Nav_Link";
 
 function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
-  const navigate = useNavigate();
 
   return (
     <div className="mobile-nav fixed top-0 left-0 w-full z-50">
@@ -42,7 +40,7 @@ function MobileNav() {
               ))}
               <li className="w-full">
                 <Link
-                  to="/private/calendly"
+                  to="/contact"
                   className="w-full block bg-gradient-to-r from-[#d4af37] to-[#e3c770] text-black font-semibold py-3 text-center"
                 >
                   Prendre rendez-vous

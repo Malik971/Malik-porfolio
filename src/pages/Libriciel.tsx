@@ -606,7 +606,7 @@ function Libriciel() {
           </cite>
 
           <motion.a
-            href="/private/calendly"
+            href="/contact"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             className="mt-6 inline-block bg-gradient-to-r from-[#d4af37] to-[#e3c770] text-black font-semibold py-3 px-8 rounded-full shadow hover:from-[#e3c770] hover:to-[#d4af37] transition duration-300 text-sm"

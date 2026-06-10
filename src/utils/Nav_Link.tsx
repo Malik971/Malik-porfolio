@@ -1,21 +1,21 @@
 const NAV_LINKS = [
   {
-    to: "/private/About",
+    to: "/about",
     label: "Sur moi",
   },
   {
-    to: "/private/Project",
+    to: "/projets",
     label: "Mes projets",
   },
   {
-    to: "/private/Competences",
+    to: "/competences",
     label: "Mes Compétences",
   },
   {
-    to: "/private/Carnet",
+    to: "/parcours",
     label: "Carnet d’apprentissage",
   },
-  { to: "/private/Libriciel", label: "Pourquoi Libriciel ?" },
+  { to: "/libriciel", label: "Pourquoi Libriciel ?" },
 ];
 
 export { NAV_LINKS };

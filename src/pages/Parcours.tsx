@@ -72,7 +72,7 @@ const entries: TimelineEntry[] = [
     ],
   },
   {
-    date: "Juillet – Août 2025",
+    date: "Juillet - Août 2025",
     title: "Animateur & Développeur interne",
     org: "Camping Sandaya",
     type: "xp",

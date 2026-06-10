@@ -225,7 +225,7 @@ const Experience = () => {
           </h5>
           <h2 className="text-4xl font-bold mb-3">Mes Compétences</h2>
           <p className="text-gray-500 text-sm">
-            Mis à jour · Juin 2026 — e-commerce, interopérabilité & intégration de paiement
+            Mis à jour · Juin 2026 · e-commerce, interopérabilité & intégration de paiement
           </p>
         </motion.div>
 
@@ -282,7 +282,7 @@ const Experience = () => {
               >
                 <div className="px-6 pb-6 border-t border-[#d4af37]/10 pt-5">
                   <p className="text-xs text-gray-500 mb-5 leading-relaxed">
-                    Apprentissage des fondamentaux réseau et sécurité en février 2026 — de l'architecture physique aux protocoles de chiffrement.
+                    Apprentissage des fondamentaux réseau et sécurité en février 2026, de l'architecture physique aux protocoles de chiffrement.
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {networkConcepts.map(({ label, desc }, i) => (
