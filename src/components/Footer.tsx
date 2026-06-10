@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const socials = {
   github: "https://github.com/Malik971",
   email: "malik97un@gmail.com",
-  linkedin: "", // ← TODO Malik : colle ici l'URL de ton profil LinkedIn
+  linkedin: "https://www.linkedin.com/in/malik-ibo-086693261",
 };
 
 /* Icônes SVG inline (pas de dépendance externe) */
